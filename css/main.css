@@ -1,0 +1,33 @@
+body {
+	background: #156c99;
+	color: #fff;
+	font-family: monospace;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.key {
+	background: #f2f2f2;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	color: #222;
+	padding: 2px 4px;
+}
+
+.muted {
+	opacity: .25;
+}
+
+.active {
+	background: #f2f2f2;
+}
+
+aside,
+canvas {
+	text-align: left;
+	display: inline-block;
+}

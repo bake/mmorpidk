@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MMORPidk</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<canvas></canvas>
+
+			<aside>
+				<p><span class="fps"></span> FPS</p>
+
+				<p><span class="key" class="up">&uarr;</span> Go up</p>
+				<p><span class="key" class="down">&darr;</span> Go down</p>
+				<p><span class="key" class="left">&larr;</span> Go left</p>
+				<p><span class="key" class="right">&rarr;</span> Go right</p>
+				<p><span class="key" class="space">&nbsp;</span> / <span class="key"><i class="icon-gamepad" class="space"></i> A</span> Attack</p>
+			</aside>
+		</div>
+
+		<script src="http://w8l.org:61226/socket.io/socket.io.js"></script>
+
+		<script>
+		/**
+		 * i'm too lazy to update a second file on every upload ... 
+		 */
+		window.socket = io.connect('http://w8l.org:61226/');
+		</script>
+
+		<script src="./js/main.js"></script>
+		<script src="./js/map.js"></script>
+		<script src="./js/player.js"></script>
+		<script src="./js/control.js"></script>
+		<script src="./js/events.js"></script>
+	</body>
+</html>
